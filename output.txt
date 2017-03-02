@@ -1,0 +1,694 @@
+Intermediate Steps 
+
+Processing of Transactional database 1 :
+
+[root@server dm]# php  apriori.php
+Choose database to process 
+press 1 for Transactional Database 1 
+press 2 for Transactional Database 2 
+press 3 for Transactional Database 3 
+press 4 for Transactional Database 4 
+press 5 for Transactional Database 5 
+1
+Enter minimum support value :: 
+10
+Enter minimum confidence value :: 
+40
+
+Thank you, continuing...
+Following are intermediate steps ::   
+
+ 
+The Value of C1 :: 
+
+
+Array
+(
+    [onions] => 7
+    [potatoes] => 2
+    [spinach] => 6
+    [tomatoes] => 7
+    [garlic] => 7
+    [ginger] => 4
+    [lemon] => 10
+    [raddish] => 2
+    [beetroot] => 4
+    [carrot] => 3
+)
+The Value of L1 ::
+
+ 
+Array
+(
+    [onions] => 7
+    [potatoes] => 2
+    [spinach] => 6
+    [tomatoes] => 7
+    [garlic] => 7
+    [ginger] => 4
+    [lemon] => 10
+    [raddish] => 2
+    [beetroot] => 4
+    [carrot] => 3
+)
+The Value of C2 :: 
+
+
+Array
+(
+    [onions|potatoes] => 0
+    [onions|spinach] => 0
+    [onions|tomatoes] => 0
+    [onions|garlic] => 0
+    [onions|ginger] => 0
+    [onions|lemon] => 0
+    [onions|raddish] => 0
+    [onions|beetroot] => 0
+    [onions|carrot] => 0
+    [potatoes|spinach] => 0
+    [potatoes|tomatoes] => 0
+    [potatoes|garlic] => 0
+    [potatoes|ginger] => 0
+    [potatoes|lemon] => 0
+    [potatoes|raddish] => 0
+    [potatoes|beetroot] => 0
+    [potatoes|carrot] => 0
+    [spinach|tomatoes] => 0
+    [spinach|garlic] => 0
+    [spinach|ginger] => 0
+    [spinach|lemon] => 0
+    [spinach|raddish] => 0
+    [spinach|beetroot] => 0
+    [spinach|carrot] => 0
+    [tomatoes|garlic] => 0
+    [tomatoes|ginger] => 0
+    [tomatoes|lemon] => 0
+    [tomatoes|raddish] => 0
+    [tomatoes|beetroot] => 0
+    [tomatoes|carrot] => 0
+    [garlic|ginger] => 0
+    [garlic|lemon] => 0
+    [garlic|raddish] => 0
+    [garlic|beetroot] => 0
+    [garlic|carrot] => 0
+    [ginger|lemon] => 0
+    [ginger|raddish] => 0
+    [ginger|beetroot] => 0
+    [ginger|carrot] => 0
+    [lemon|raddish] => 0
+    [lemon|beetroot] => 0
+    [lemon|carrot] => 0
+    [raddish|beetroot] => 0
+    [raddish|carrot] => 0
+    [beetroot|carrot] => 0
+)
+The Value of C2 ::
+ 
+
+Array
+(
+    [onions|potatoes] => 1
+    [onions|spinach] => 1
+    [onions|tomatoes] => 2
+    [onions|garlic] => 3
+    [onions|ginger] => 1
+    [onions|lemon] => 5
+    [onions|raddish] => 0
+    [onions|beetroot] => 0
+    [onions|carrot] => 0
+    [potatoes|spinach] => 2
+    [potatoes|tomatoes] => 0
+    [potatoes|garlic] => 1
+    [potatoes|ginger] => 0
+    [potatoes|lemon] => 0
+    [potatoes|raddish] => 0
+    [potatoes|beetroot] => 0
+    [potatoes|carrot] => 0
+    [spinach|tomatoes] => 3
+    [spinach|garlic] => 1
+    [spinach|ginger] => 0
+    [spinach|lemon] => 2
+    [spinach|raddish] => 1
+    [spinach|beetroot] => 0
+    [spinach|carrot] => 0
+    [tomatoes|garlic] => 0
+    [tomatoes|ginger] => 1
+    [tomatoes|lemon] => 4
+    [tomatoes|raddish] => 0
+    [tomatoes|beetroot] => 0
+    [tomatoes|carrot] => 0
+    [garlic|ginger] => 3
+    [garlic|lemon] => 4
+    [garlic|raddish] => 1
+    [garlic|beetroot] => 1
+    [garlic|carrot] => 1
+    [ginger|lemon] => 2
+    [ginger|raddish] => 1
+    [ginger|beetroot] => 0
+    [ginger|carrot] => 0
+    [lemon|raddish] => 0
+    [lemon|beetroot] => 1
+    [lemon|carrot] => 0
+    [raddish|beetroot] => 0
+    [raddish|carrot] => 0
+    [beetroot|carrot] => 3
+)
+The Value of L2 ::
+
+ 
+Array
+(
+    [onions|tomatoes] => 2
+    [onions|garlic] => 3
+    [onions|lemon] => 5
+    [potatoes|spinach] => 2
+    [spinach|tomatoes] => 3
+    [spinach|lemon] => 2
+    [tomatoes|lemon] => 4
+    [garlic|ginger] => 3
+    [garlic|lemon] => 4
+    [ginger|lemon] => 2
+    [beetroot|carrot] => 3
+)
+The Value of C3 :: 
+
+
+Array
+(
+    [onions|lemon|tomatoes] => 0
+    [onions|lemon|garlic] => 0
+    [spinach|lemon|tomatoes] => 0
+    [garlic|lemon|ginger] => 0
+)
+The Value of C3 ::
+ 
+
+Array
+(
+    [onions|lemon|tomatoes] => 1
+    [onions|lemon|garlic] => 3
+    [spinach|lemon|tomatoes] => 2
+    [garlic|lemon|ginger] => 2
+)
+The Value of L3 ::
+
+ 
+Array
+(
+    [onions|lemon|garlic] => 3
+    [spinach|lemon|tomatoes] => 2
+    [garlic|lemon|ginger] => 2
+)
+
+
+Generation Of Association Rules
+
+Association Rule of Transactional database 1 
+With minimum support=10 
+And minimum confidence =40
+
+Association Rules for 3 frequent item set
+
+
+ {onions} => {lemon,garlic}             3  , 7 , 42.857142857143  True , It is an association rule 
+
+ {onions , lemon} => {garlic}           3  , 5 , 60  True , It is an association rule 
+
+ {lemon} => {garlic,onions}             3  , 10 , 30  False
+
+ {lemon , garlic} => {onions}           3  , 4 , 75  True , It is an association rule 
+
+ {garlic} => {onions,lemon}             3  , 7 , 42.857142857143  True , It is an association rule 
+
+ {garlic , onions} => {lemon}           3  , 3 , 100  True , It is an association rule 
+
+ {spinach} => {lemon,tomatoes}                  2  , 6 , 33.333333333333  False
+
+ {spinach , lemon} => {tomatoes}                2  , 2 , 100  True , It is an association rule 
+
+ {lemon} => {tomatoes,spinach}                  2  , 10 , 20  False
+
+ {lemon , tomatoes} => {spinach}                2  , 4 , 50  True , It is an association rule 
+
+ {tomatoes} => {spinach,lemon}                  2  , 7 , 28.571428571429  False
+
+ {tomatoes , spinach} => {lemon}                2  , 3 , 66.666666666667  True , It is an association rule 
+
+ {garlic} => {lemon,ginger}             2  , 7 , 28.571428571429  False
+
+ {garlic , lemon} => {ginger}           2  , 4 , 50  True , It is an association rule 
+
+ {lemon} => {ginger,garlic}             2  , 10 , 20  False
+
+ {lemon , ginger} => {garlic}           2  , 2 , 100  True , It is an association rule 
+
+ {ginger} => {garlic,lemon}             2  , 4 , 50  True , It is an association rule 
+
+ {ginger , garlic} => {lemon}           2  , 3 , 66.666666666667  True , It is an association rule
+
+
+
+Intermediate Steps 
+
+Processing of Transactional database 2 :
+
+php  apriori.php
+Choose database to process 
+press 1 for Transactional Database 1 
+press 2 for Transactional Database 2 
+press 3 for Transactional Database 3 
+press 4 for Transactional Database 4 
+press 5 for Transactional Database 5 
+2
+Enter minimum support value :: 
+10
+Enter minimum confidence value :: 
+30
+
+Thank you, continuing...
+Following are intermediate steps ::   
+
+ 
+The Value of C1 :: 
+
+
+Array
+(
+    [apple] => 2
+    [banana] => 6
+    [orange] => 4
+    [watermelon] => 10
+    [gauva] => 2
+    [lichi] => 8
+    [spinach] => 1
+    [lemon] => 10
+    [tomatoes] => 4
+    [grapes] => 8
+    [garlic] => 1
+    [raddish] => 1
+    [carrot] => 2
+)
+The Value of L1 ::
+
+ 
+Array
+(
+    [apple] => 2
+    [banana] => 6
+    [orange] => 4
+    [watermelon] => 10
+    [gauva] => 2
+    [lichi] => 8
+    [lemon] => 10
+    [tomatoes] => 4
+    [grapes] => 8
+    [carrot] => 2
+)
+The Value of C2 :: 
+
+
+Array
+(
+    [apple|banana] => 0
+    [apple|orange] => 0
+    [apple|watermelon] => 0
+    [apple|gauva] => 0
+    [apple|lichi] => 0
+    [apple|lemon] => 0
+    [apple|tomatoes] => 0
+    [apple|grapes] => 0
+    [apple|carrot] => 0
+    [banana|orange] => 0
+    [banana|watermelon] => 0
+    [banana|gauva] => 0
+    [banana|lichi] => 0
+    [banana|lemon] => 0
+    [banana|tomatoes] => 0
+    [banana|grapes] => 0
+    [banana|carrot] => 0
+    [orange|watermelon] => 0
+    [orange|gauva] => 0
+    [orange|lichi] => 0
+    [orange|lemon] => 0
+    [orange|tomatoes] => 0
+    [orange|grapes] => 0
+    [orange|carrot] => 0
+    [watermelon|gauva] => 0
+    [watermelon|lichi] => 0
+    [watermelon|lemon] => 0
+    [watermelon|tomatoes] => 0
+    [watermelon|grapes] => 0
+    [watermelon|carrot] => 0
+    [gauva|lichi] => 0
+    [gauva|lemon] => 0
+    [gauva|tomatoes] => 0
+    [gauva|grapes] => 0
+    [gauva|carrot] => 0
+    [lichi|lemon] => 0
+    [lichi|tomatoes] => 0
+    [lichi|grapes] => 0
+    [lichi|carrot] => 0
+    [lemon|tomatoes] => 0
+    [lemon|grapes] => 0
+    [lemon|carrot] => 0
+    [tomatoes|grapes] => 0
+    [tomatoes|carrot] => 0
+    [grapes|carrot] => 0
+)
+The Value of C2 ::
+ 
+
+Array
+(
+    [apple|banana] => 2
+    [apple|orange] => 1
+    [apple|watermelon] => 1
+    [apple|gauva] => 1
+    [apple|lichi] => 0
+    [apple|lemon] => 0
+    [apple|tomatoes] => 0
+    [apple|grapes] => 0
+    [apple|carrot] => 0
+    [banana|orange] => 1
+    [banana|watermelon] => 1
+    [banana|gauva] => 1
+    [banana|lichi] => 2
+    [banana|lemon] => 3
+    [banana|tomatoes] => 1
+    [banana|grapes] => 2
+    [banana|carrot] => 1
+    [orange|watermelon] => 3
+    [orange|gauva] => 0
+    [orange|lichi] => 1
+    [orange|lemon] => 1
+    [orange|tomatoes] => 1
+    [orange|grapes] => 1
+    [orange|carrot] => 0
+    [watermelon|gauva] => 1
+    [watermelon|lichi] => 3
+    [watermelon|lemon] => 6
+    [watermelon|tomatoes] => 1
+    [watermelon|grapes] => 3
+    [watermelon|carrot] => 0
+    [gauva|lichi] => 0
+    [gauva|lemon] => 0
+    [gauva|tomatoes] => 0
+    [gauva|grapes] => 0
+    [gauva|carrot] => 0
+    [lichi|lemon] => 5
+    [lichi|tomatoes] => 2
+    [lichi|grapes] => 2
+    [lichi|carrot] => 0
+    [lemon|tomatoes] => 3
+    [lemon|grapes] => 3
+    [lemon|carrot] => 0
+    [tomatoes|grapes] => 0
+    [tomatoes|carrot] => 0
+    [grapes|carrot] => 2
+)
+The Value of L2 ::
+
+ 
+Array
+(
+    [apple|banana] => 2
+    [banana|lichi] => 2
+    [banana|lemon] => 3
+    [banana|grapes] => 2
+    [orange|watermelon] => 3
+    [watermelon|lichi] => 3
+    [watermelon|lemon] => 6
+    [watermelon|grapes] => 3
+    [lichi|lemon] => 5
+    [lichi|tomatoes] => 2
+    [lichi|grapes] => 2
+    [lemon|tomatoes] => 3
+    [lemon|grapes] => 3
+    [grapes|carrot] => 2
+)
+The Value of C3 :: 
+
+
+Array
+(
+    [banana|lemon|lichi] => 0
+    [banana|grapes|lichi|lemon] => 0
+    [banana|grapes|lichi] => 0
+    [banana|grapes|lemon] => 0
+    [watermelon|lemon|lichi] => 0
+    [watermelon|grapes|lichi|lemon] => 0
+    [watermelon|grapes|lichi] => 0
+    [watermelon|grapes|lemon] => 0
+    [lichi|tomatoes|lemon] => 0
+    [lichi|grapes|lemon] => 0
+)
+The Value of C3 ::
+ 
+
+Array
+(
+    [banana|lemon|lichi] => 2
+    [banana|grapes|lichi|lemon] => 0
+    [banana|grapes|lichi] => 0
+    [banana|grapes|lemon] => 1
+    [watermelon|lemon|lichi] => 2
+    [watermelon|grapes|lichi|lemon] => 0
+    [watermelon|grapes|lichi] => 0
+    [watermelon|grapes|lemon] => 2
+    [lichi|tomatoes|lemon] => 2
+    [lichi|grapes|lemon] => 0
+)
+The Value of L3 ::
+
+ 
+Array
+(
+    [banana|lemon|lichi] => 2
+    [watermelon|lemon|lichi] => 2
+    [watermelon|grapes|lemon] => 2
+    [lichi|tomatoes|lemon] => 2
+)
+
+
+
+
+
+
+
+Generation Of Association Rules
+
+Association Rule of Transactional database 2
+With minimum support=10 
+And minimum confidence =30
+
+{banana} => {lemon,lichi}              2  , 6 , 33.333333333333  True , It is an association rule 
+
+ {banana , lemon} => {lichi}            2  , 3 , 66.666666666667  True , It is an association rule 
+
+ {lemon} => {lichi,banana}              2  , 10 , 20  False
+
+ {lemon , lichi} => {banana}            2  , 5 , 40  True , It is an association rule 
+
+ {lichi} => {banana,lemon}              2  , 8 , 25  False
+
+ {lichi , banana} => {lemon}            2  , 2 , 100  True , It is an association rule 
+
+ {watermelon} => {lemon,lichi}                  2  , 10 , 20  False
+
+ {watermelon , lemon} => {lichi}                2  , 6 , 33.333333333333  True , It is an association rule 
+
+ {lemon} => {lichi,watermelon}                  2  , 10 , 20  False
+
+ {lemon , lichi} => {watermelon}                2  , 5 , 40  True , It is an association rule 
+
+ {lichi} => {watermelon,lemon}                  2  , 8 , 25  False
+
+ {lichi , watermelon} => {lemon}                2  , 3 , 66.666666666667  True , It is an association rule 
+
+ {watermelon} => {grapes,lemon}                 2  , 10 , 20  False
+
+ {watermelon , grapes} => {lemon}               2  , 3 , 66.666666666667  True , It is an association rule 
+
+ {grapes} => {lemon,watermelon}                 2  , 8 , 25  False
+
+ {grapes , lemon} => {watermelon}               2  , 3 , 66.666666666667  True , It is an association rule 
+
+ {lemon} => {watermelon,grapes}                 2  , 10 , 20  False
+
+ {lemon , watermelon} => {grapes}               2  , 6 , 33.333333333333  True , It is an association rule 
+
+ {lichi} => {tomatoes,lemon}            2  , 8 , 25  False
+
+ {lichi , tomatoes} => {lemon}                  2  , 2 , 100  True , It is an association rule 
+
+ {tomatoes} => {lemon,lichi}            2  , 4 , 50  True , It is an association rule 
+
+ {tomatoes , lemon} => {lichi}                  2  , 3 , 66.666666666667  True , It is an association rule 
+
+ {lemon} => {lichi,tomatoes}            2  , 10 , 20  False
+
+ {lemon , lichi} => {tomatoes}                  2  , 5 , 40  True , It is an association rule
+Intermediate Steps 
+
+Processing of Transactional database 3 :
+
+php  apriori.php
+Choose database to process 
+press 1 for Transactional Database 1 
+press 2 for Transactional Database 2 
+press 3 for Transactional Database 3 
+press 4 for Transactional Database 4 
+press 5 for Transactional Database 5 
+3
+Enter minimum support value :: 
+20
+Enter minimum confidence value :: 
+40
+
+Thank you, continuing...
+Following are intermediate steps ::   
+
+ 
+The Value of C1 :: 
+
+
+Array
+(
+    [eggs] => 8
+    [paper] => 14
+    [milk] => 4
+    [bread] => 4
+    [ketchup] => 1
+    [pen] => 11
+    [pencil] => 16
+    [grapes] => 2
+)
+The Value of L1 ::
+
+ 
+Array
+(
+    [eggs] => 8
+    [paper] => 14
+    [milk] => 4
+    [bread] => 4
+    [pen] => 11
+    [pencil] => 16
+)
+The Value of C2 :: 
+
+
+Array
+(
+    [eggs|paper] => 0
+    [eggs|milk] => 0
+    [eggs|bread] => 0
+    [eggs|pen] => 0
+    [eggs|pencil] => 0
+    [paper|milk] => 0
+    [paper|bread] => 0
+    [paper|pen] => 0
+    [paper|pencil] => 0
+    [milk|bread] => 0
+    [milk|pen] => 0
+    [milk|pencil] => 0
+    [bread|pen] => 0
+    [bread|pencil] => 0
+    [pen|pencil] => 0
+)
+The Value of C2 ::
+ 
+
+Array
+(
+    [eggs|paper] => 4
+    [eggs|milk] => 3
+    [eggs|bread] => 2
+    [eggs|pen] => 2
+    [eggs|pencil] => 7
+    [paper|milk] => 2
+    [paper|bread] => 2
+    [paper|pen] => 8
+    [paper|pencil] => 11
+    [milk|bread] => 3
+    [milk|pen] => 1
+    [milk|pencil] => 2
+    [bread|pen] => 1
+    [bread|pencil] => 1
+    [pen|pencil] => 9
+)
+The Value of L2 ::
+
+ 
+Array
+(
+    [eggs|paper] => 4
+    [eggs|pencil] => 7
+    [paper|pen] => 8
+    [paper|pencil] => 11
+    [pen|pencil] => 9
+)
+The Value of C3 :: 
+
+
+Array
+(
+    [eggs|pencil|paper] => 0
+    [paper|pencil|pen] => 0
+)
+The Value of C3 ::
+ 
+
+Array
+(
+    [eggs|pencil|paper] => 3
+    [paper|pencil|pen] => 7
+)
+
+
+
+
+Generation Of Association Rules
+
+Association Rule of Transactional database 3
+With minimum support=20 
+And minimum confidence =40
+
+
+
+
+{eggs}  =>  {paper}             4 , 8  , 50  True , It is an association rule 
+
+{paper}  =>  {eggs}             4 , 14  , 28.571428571429  False
+
+{eggs}  =>  {pencil}            7 , 8  , 87.5  True , It is an association rule 
+
+{pencil}  =>  {eggs}            7 , 16  , 43.75  True , It is an association rule 
+
+{paper}  =>  {pen}              8 , 14  , 57.142857142857  True , It is an association rule 
+
+{pen}  =>  {paper}              8 , 11  , 72.727272727273  True , It is an association rule 
+
+{paper}  =>  {pencil}           11 , 14  , 78.571428571429  True , It is an association rule 
+
+{pencil}  =>  {paper}           11 , 16  , 68.75  True , It is an association rule 
+
+{pen}  =>  {pencil}             9 , 11  , 81.818181818182  True , It is an association rule 
+
+{pencil}  =>  {pen}             9 , 16  , 56.25  True , It is an association rule 
+
+Association Rules for 3 frequent item set
+
+
+ {paper} => {pencil,pen}                7  , 14 , 50  True , It is an association rule 
+
+ {paper , pencil} => {pen}              7  , 11 , 63.636363636364  True , It is an association rule 
+
+ {pencil} => {pen,paper}                7  , 16 , 43.75  True , It is an association rule 
+
+ {pencil , pen} => {paper}              7  , 9 , 77.777777777778  True , It is an association rule 
+
+ {pen} => {paper,pencil}                7  , 11 , 63.636363636364  True , It is an association rule 
+
+ {pen , paper} => {pencil}              7  , 8 , 87.5  True , It is an association rule
+
